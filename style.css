@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #212121;
+    font-family:raleway;
+    font-style: italic;
+}
+.Container_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+
+
+.Container_nav h3{
+    background-color: white;
+    padding: 1em;
+    margin-right: 52px;
+    border-radius: 5px;
+    width: 230px;
+}
+
+.Container_nav h1{
+    color: white;
+    margin-left: 50px;
+}
+
+.Container_Section_Grid{
+    display: grid;
+    grid-template-columns: 72% 17%;
+    justify-content: center;
+    gap: 30px;
+}
+
+.Section_Container_Left,.Section_Container_Right{
+    background-color: white;
+    min-height: 600px;
+    border-radius: 15px;
+}
+
+.Score_Time{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Time_Number{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 0.7em;
+}
+
+#Score{
+    font-size: 24px;
+}
+
+#Point{
+    font-weight: bold;
+}
+
+#Timer{
+    font-size: 24px;
+}
+
+#Second{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.Section_Typing{
+    margin-top: 50px;
+}
+
+.Section_Typing h4,h1{
+   text-align: center;
+}
+
+.Section_Typing_Input input{
+    display: block;
+    margin: auto;
+    height: 45px;
+    width: 450px;
+}
+
+.Section_Typing_Input input::placeholder{
+    color: darkgray;
+    font-size: 25px;
+    text-align: center;
+}
+
+.Section_Typing h4{
+    font-size: 16px;
+}
+
+.Section_Typing h1{
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.Section_Container_Right{
+    text-align: center;
+}
+
+
+#StartCompte{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding: 1em;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#SideBar{
+    cursor: pointer;
+}
+
+#Container_Side_Bar{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    width: 350px;
+    height: auto;
+    padding: 1em;
+    margin-left: 20px;
+    position: absolute;
+    left: -500px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+}
+
+#Container_Side_Bar.SideActive{
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+}
+
+.Container_Check{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Container_Check label{
+   margin-left: -10px;
+}
+
+#Niveau_parametre{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px ;
+}
+
+.Section_Container_Right h3{
+   padding: 1em;
+}
+
+.UserScore{
+    line-height: 50px;
+}
+
+.UserScore p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Section_Container_Right h3{
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.User1 img{
+    width: 20px;
+    height:20px;
+}
+
+.User1{
+    display: flex;
+    /* justify-content: center; */
+    gap:10px;
+    align-items: center;
+    margin-left: 20px;
+}
+@media screen and (max-width: 800px) {
+    .Container_Section_Grid{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}

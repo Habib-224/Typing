@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+</head>
+<body>
+    <div class="Container">
+        <div class="Container_nav">
+            <h1>Dactylo &nbsp; <i class="fa-solid fa-book"></i></h1>
+            <div class="Setting">
+                <h3>Thierno Habib Bah &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-gear" onclick="afficherSideBar()" id="SideBar"></i></h3>
+            </div>
+        </div>
+        <div id="Container_Side_Bar">
+            <div class="Section_Niveau">
+                <p id="Niveau_parametre">Niveau</p>
+                <div class="Container_Check">
+                    <div class="Facile">
+                        <input type="checkbox" checked>&nbsp;&nbsp;&nbsp;
+                        <label for="">Facile</label>
+                    </div>
+                    <div class="Normale">
+                        <input type="checkbox">&nbsp;&nbsp;&nbsp;
+                        <label for="">Normale</label>
+                    </div>
+                    <div class="Intermediaire">
+                        <input type="checkbox">&nbsp;&nbsp;&nbsp;
+                        <label for="">Intermediaire</label>
+                    </div>
+                    <div class="Difficile">
+                        <input type="checkbox">&nbsp;&nbsp;&nbsp;
+                        <label for="">Difficile</label>
+                    </div>
+                    <div class="Expert">
+                        <input type="checkbox">&nbsp;&nbsp;&nbsp;
+                        <label for="">Expert</label>
+                    </div>
+                </div>
+            </div>
+            <div class="Section_Langues">
+                <p id="Niveau_parametre">Langues</p>
+                <div class="Container_Check">
+                    <div class="Facile">
+                        <input type="checkbox" checked>&nbsp;&nbsp;&nbsp;
+                        <label for="" data_langue="f">Français</label>
+                    </div>
+                    <div class="Normale">
+                        <input type="checkbox">&nbsp;&nbsp;&nbsp;
+                        <label for="">Anglais</label>
+                    </div>
+                    <div class="Intermediaire">
+                        <input type="checkbox">&nbsp;&nbsp;&nbsp;
+                        <label for="">Allemand</label>
+                    </div>
+                    <div class="Difficile">
+                        <input type="checkbox">&nbsp;&nbsp;&nbsp;
+                        <label for="">Wolof</label>
+                    </div>
+                    <div class="Expert">
+                        <input type="checkbox">&nbsp;&nbsp;&nbsp;
+                        <label for="">Espagnol</label>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="Container_Section_Grid">
+            <div class="Section_Container_Left">
+                <div class="Score_Time">
+                    <p id="Score">Score: <span id="Point">0 pts</span></p>
+                    <div class="Time">
+                        <div class="Time_Text">
+                            <p id="Timer">Time</p>
+                        </div>
+                        <div class="Time_Number">
+                            <p id="Second">60</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Section_Typing">
+                    <h4>Word to type</h4>
+                    <h1 id="TextGenerator"></h1>
+                    <div class="Section_Typing_Input">
+                        <input type="text" placeholder="Type here" id="inputgrise">
+                    </div>
+
+                    <div id="StartCompte">
+                        <h2 onclick="Start()">Start</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="Section_Container_Right">
+                <h3>LEADERBOARD</h3>
+                <div class="UserScore">
+                    <div class="User1">
+                        <img src="image//medaille-dor.png" alt="">
+                        <p>Fall Bah -<span id="ScorePoint">70 pts</span></p>
+                    </div>
+                    <div class="User1">
+                        <img src="image//medaille.png" alt="">
+                        <p>Pape Diou -<span id="ScorePoint">65pts</span></p>
+                    </div>
+                    <div class="User1">
+                        <img src="image//medaille (1).png" alt="">
+                        <p>Halimatou Diallo -<span id="ScorePoint">50 pts</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="test.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
