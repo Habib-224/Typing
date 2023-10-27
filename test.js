@@ -43,6 +43,7 @@ if(
 var tab =0
 
 function affichagedynamique(){
+    decrementation();
     var inputgrise = document.querySelector("#inputgrise");
     var TextGenerator =document.getElementById('TextGenerator').innerHTML=TabWord[0];
     inputgrise.addEventListener('blur', function() {
@@ -113,7 +114,6 @@ function ScoreIncrementation(){
 function Start(){
     let StartCompte =document.getElementById("StartCompte");
     StartCompte.style.display="none"
-    decrementation();
     affichagedynamique();
 }
 
